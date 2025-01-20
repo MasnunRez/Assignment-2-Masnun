@@ -1,11 +1,12 @@
-*{
-    margin: 0 auto;
+/* *{
+    margin: 0;
     padding: 0;
-}
+} */
 body{
     background-color: var(--clr-white);
     width: 100%;
-    max-width: 1440px;
+    max-width: 1160px;
+    margin: 0 auto;
 }
 
 :root{
@@ -70,15 +71,17 @@ li{
 
 
 button{
-    padding: 10px 60px;
+    
     border-radius: 12px;
     color: var(--clr-white);
     font-size: 20px;
     font-weight: 500;
+    line-height: 30px;
     border: none;
 }
 .btn-contact{
     background-color: var(--clr-orange);
+    padding: 10px 60px;
 }
 
 nav{
@@ -92,6 +95,7 @@ nav{
 /* Hero Section  */
 .hero-sec{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     max-width: 1440px;
     width: 100%;
@@ -109,26 +113,111 @@ h1{
 }
 .btn-hero{
     background-color: var(--clr-black);
+    padding: 10px 47px;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* section{
+/* Section-1: Standard Curriculam */
+.standard-curri{
+    max-width: 1270px;
     width: 100%;
-    height: 800px;
+    /* margin: 0 auto; */
 }
 
+h2{
+    font-size: 46px;
+    color: var(--clr-black);
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
 
-footer{
-    width: 100%;
-    height: 300px;
-    background-color: rgb(61, 78, 78);
-} */
+h3{
+    font-size: 24.5px;
+    margin: 33px 0px;
+}
+
+.card-area{
+    display: flex;
+    gap: 29px;
+}
+.card-1, .card-2, .card-3{
+    border: 1px solid #DEF5FF;
+    background-image: linear-gradient(to bottom,#DEF5FF 0%, #ffffff 30%);
+    border-radius: 19px;
+    box-shadow: inset 1px 1px 50px rgb(235, 235, 235);
+    align-items: center;
+    text-align: center;
+    padding: 53px 40px;
+    width: 368px;
+}
+.card-2{
+    border: 1px solid #FFF4DC;
+    background-image: linear-gradient(to bottom,#FFF4DC 0%, #ffffff 30%);
+}
+.card-3{
+    border: 1px solid #F2E8FF;
+    background-image: linear-gradient(to bottom,#F2E8FF 0%, #ffffff 30%);
+}
+.card-txt{
+    font-size: 15.5px;
+    line-height: 29px;
+    color: #808080;
+    margin-bottom: 34px;
+}
+.card-btn1, .card-btn2, .card-btn3{
+    font-size: 15.5px;
+    line-height: 29px;
+    font-weight: 700;
+    color: #64C8FF;
+    text-decoration: none;
+}
+.card-btn2{
+    color: #F0AA00;
+}
+.card-btn3{
+    color: #8700FF;
+}
+#section-1{
+    background-image: url(assets/bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 140%;
+    height: 1400px;
+    
+}
+/* Arrow Button (Learned from Youtube) */
+.container{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arr{
+    background: var(--clr-orange);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: 15px;
+    transition: 0.4s ease;
+}
+.arr:hover{
+    box-shadow: 0px 0px 20px 20px #f0a80043;
+    
+}
+.arr div {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-top: 6px solid white;
+    border-left: 6px solid white;
+    transform: rotate(45deg);
+    margin-left: 22px;
+    margin-top: 30px;
+
+}
+.right{
+    transform: rotate(90deg);
+}
+.left{
+    transform: rotate(-90deg);
+}
