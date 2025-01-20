@@ -1,0 +1,134 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+body{
+    background-color: var(--clr-white);
+    width: 100%;
+    max-width: 1440px;
+}
+
+:root{
+    --clr-orange:#FEA301;
+    --clr-blue:#01ACFD;
+    --clr-black:#111111;
+    --clr-white:#F7F7F7;
+}
+
+/* Main Font */
+.quicksand-mainfont {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* regular 400
+  medium 500
+  semi-bold 600
+  bold 700 */
+
+
+  /* Header Section */
+
+.logo-area{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-txt{
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--clr-black);
+}
+
+li{
+    list-style: none;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 0px 100px;
+}
+.home-m, .about-m, .faci-m, .admission-m{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+.home-m{
+    color: var(--clr-orange);
+}
+.about-m{
+    color: var(--clr-blue);
+}
+.faci-m{
+    color: #05D4DF;
+}
+.admission-m{
+    color: #5D58EF;
+}
+
+
+button{
+    padding: 10px 60px;
+    border-radius: 12px;
+    color: var(--clr-white);
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+}
+.btn-contact{
+    background-color: var(--clr-orange);
+}
+
+nav{
+    width: 100%;
+    height: 102px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    /* background-color: aqua; */
+}
+/* Hero Section  */
+.hero-sec{
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+}
+.hero-content{
+    width: 640px;
+}
+h1{
+    font-size: 3.5em;
+    font-weight: 700;
+}
+.hero-description{
+    font-size: 1.25em;
+    margin: 24px 0px;
+}
+.btn-hero{
+    background-color: var(--clr-black);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* section{
+    width: 100%;
+    height: 800px;
+}
+
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(61, 78, 78);
+} */
