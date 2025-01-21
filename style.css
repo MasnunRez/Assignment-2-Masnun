@@ -2,19 +2,21 @@
     margin: 0;
     padding: 0;
 } */
-body{
-    background-color: var(--clr-white);
-    width: 100%;
-    max-width: 1160px;
-    margin: 0 auto;
-}
-
 :root{
     --clr-orange:#FEA301;
     --clr-blue:#01ACFD;
     --clr-black:#111111;
     --clr-white:#F7F7F7;
 }
+body{
+    background-color: var(--clr-white);
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    background-image: linear-gradient(to top, #fea1014d 0%, #F7F7F7 40%);
+}
+
+
 
 /* Main Font */
 .quicksand-mainfont {
@@ -182,7 +184,7 @@ h3{
     background-repeat: no-repeat;
     background-position: top;
     background-size: 140%;
-    height: 1400px;
+    height: auto;
     
 }
 /* Arrow Button (Learned from Youtube) */
@@ -220,4 +222,70 @@ h3{
 }
 .left{
     transform: rotate(-90deg);
+}
+
+/* Section-2 Our Story */
+#our-stories{
+    /* background-image: url(assets/bg.png);
+    background-image: linear-gradient(to bottom,#F2E8FF 0%, #ffffff 30%);
+    width: 100%;
+    margin: 0; */
+}
+
+.story-date1, .story-date2{
+    
+    background-color: #3CD8E8;
+    color: var(--clr-white);
+    padding: 15px 10px;
+    margin-top: -30px;
+    width: 150px;
+    text-align: center;
+    border-radius: 48px;
+    position: relative;
+    z-index: 1;
+    
+}
+.story-date2{
+    background-color: #95B226;
+}
+.story-container{
+    display: flex;
+    gap: 20px;
+}
+
+.set-left{
+    background-color: #fff;
+    border-radius: 16px;
+
+}
+.cont-2, .cont-3, .cont-4, .cont-5{
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.set-right{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.st-img1{
+    width: auto;
+    height: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+.st-img2{
+    width: auto;
+    height: 50%px;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.story-title{
+    font-size: 1em;
+}
+.story-1{
+    padding: 0px 38px;
+}
+.story-2{
+    padding: 0px 20px 0px 35px;
 }
