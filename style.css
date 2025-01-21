@@ -124,7 +124,6 @@ h1{
 .standard-curri{
     max-width: 1270px;
     width: 100%;
-    /* margin: 0 auto; */
 }
 
 h2{
@@ -152,13 +151,16 @@ h3{
     align-items: center;
     text-align: center;
     padding: 53px 40px;
-    width: 368px;
+    /* width: 368px; */
+    width: 33%;
 }
 .card-2{
+    width: 33%;
     border: 1px solid #FFF4DC;
     background-image: linear-gradient(to bottom,#FFF4DC 0%, #ffffff 30%);
 }
 .card-3{
+    width: 33%;
     border: 1px solid #F2E8FF;
     background-image: linear-gradient(to bottom,#F2E8FF 0%, #ffffff 30%);
 }
@@ -190,7 +192,7 @@ h3{
     
 }
 /* Arrow Button (Learned from Youtube) */
-.container{
+.arrow-button{
     height: 20vh;
     display: flex;
     justify-content: center;
@@ -261,6 +263,11 @@ h3{
     background-color: #fff;
     border-radius: 16px;
 }
+.cont-mob{
+    background-color: #fff;
+    border-radius: 16px;
+    display: none;
+}
 
 .set-right{
     display: grid;
@@ -294,7 +301,6 @@ h3{
     justify-content: center;
 }
 
-
 /* Footer Section */
 footer{
     width: auto;
@@ -307,7 +313,15 @@ footer{
 .footer-section{
     display: flex;
     justify-content: space-between;
-    /* align-items: baseline; */
+}
+.footLogo-txt{
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.footer-description{
+    font-size: 1.25em;
+    margin: 24px 0px;
 }
 .foot-menu{
     color: white;
@@ -316,8 +330,99 @@ footer{
 }
 .column-1{
     width: 400px;
-    /* margin-top: 30px; */
 }
 .logo-area{
     margin: 30px 0px;
+}
+
+hr{
+    border: 1px solid #fea10158;
+    display: none;
+}
+/* Responsive Design  */
+@media screen and (max-width:576px) {
+    .logo-txt, .arrow-button, .set-left, .btn-contact, .menu{
+        display: none;
+    }
+    hr, .cont-mob{
+        display: block;
+    }
+    .hero-sec{
+        flex-direction: column-reverse;
+    }
+    .hero-content, .hero-description{
+        width: auto;
+        text-align: center;
+        padding: 0px 60px;
+    }
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 26px;
+    }
+    h3{
+        font-size: 18px;
+    }
+
+    .hero-sec{
+        width: 100%;
+    }
+    .card-1, .card-2, .card-3{
+        width: auto;
+    }
+    #section-1{
+        background-size: 90%;
+    }
+    .card-area{
+        flex-direction: column;
+        margin: 0 auto;
+        width: 500px;
+    }
+    .st-img2{
+        width: 100%;
+    }
+    .set-right{
+        padding: 0 20px;
+    }
+    footer{
+        height: auto;
+    }
+    .footer-section{
+        flex-direction: column;
+        margin-left: 20px;
+        margin-bottom: 50px;
+        
+    }
+    /* .card-1, .card-2, .card-3{
+        padding: 0;
+        justify-content: center;
+    } */
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    
 }
