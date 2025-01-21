@@ -1,7 +1,7 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
-} */
+}
 :root{
     --clr-orange:#FEA301;
     --clr-blue:#01ACFD;
@@ -10,12 +10,14 @@
 }
 body{
     background-color: var(--clr-white);
+    background-image: linear-gradient(to top, #fea1014d 0%, #F7F7F7 40%);
+}
+header, main, .footer-section{
     width: 100%;
     max-width: 1160px;
     margin: 0 auto;
-    background-image: linear-gradient(to top, #fea1014d 0%, #F7F7F7 40%);
-}
 
+}
 
 
 /* Main Font */
@@ -225,13 +227,10 @@ h3{
 }
 
 /* Section-2 Our Story */
-#our-stories{
-    /* background-image: url(assets/bg.png);
-    background-image: linear-gradient(to bottom,#F2E8FF 0%, #ffffff 30%);
-    width: 100%;
-    margin: 0; */
-}
 
+#our-stories{
+    margin: 60px 0px;
+}
 .story-date1, .story-date2{
     
     background-color: #3CD8E8;
@@ -288,4 +287,37 @@ h3{
 }
 .story-2{
     padding: 0px 20px 0px 35px;
+}
+.btn-our{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Footer Section */
+footer{
+    width: auto;
+    height: 519px;
+    background-color: var(--clr-blue);
+    display: flex;
+    align-items: center;
+    
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: baseline; */
+}
+.foot-menu{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.column-1{
+    width: 400px;
+    /* margin-top: 30px; */
+}
+.logo-area{
+    margin: 30px 0px;
 }
