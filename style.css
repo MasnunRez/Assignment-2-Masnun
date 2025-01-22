@@ -60,6 +60,48 @@ li{
     font-size: 20px;
     font-weight: 600;
 }
+/* Mobile Menu  */
+.mobile-menuitem{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #111111;
+}
+.mobileMenu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #d4f2ff81;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-top: 40px;
+
+}
+.mobileMenu li{
+    width: 100%;
+
+}
+
+.ham-icon{
+    width: 40px;
+    display: none;
+    padding-right: 30px;
+}
+.close-icon{
+    width: 40px;
+
+}
+
 .home-m{
     color: var(--clr-orange);
 }
@@ -83,9 +125,15 @@ button{
     line-height: 30px;
     border: none;
 }
+button:hover{
+    box-shadow: 0px 0px 20px 10px #01adfd46;
+}
 .btn-contact{
     background-color: var(--clr-orange);
     padding: 10px 60px;
+}
+.btn-contact:hover{
+    box-shadow: 0px 0px 20px 20px #f0a80043;
 }
 
 nav{
@@ -154,6 +202,7 @@ h3{
     /* width: 368px; */
     width: 33%;
 }
+
 .card-2{
     width: 33%;
     border: 1px solid #FFF4DC;
@@ -226,6 +275,14 @@ h3{
 }
 .left{
     transform: rotate(-90deg);
+}
+
+.marq{
+    background-color: var(--clr-blue);
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 5px 0px;
 }
 
 /* Section-2 Our Story */
@@ -393,6 +450,9 @@ hr{
         margin-left: 20px;
         margin-bottom: 50px;
         
+    }
+    .ham-icon{
+        display: flex;
     }
     /* .card-1, .card-2, .card-3{
         padding: 0;
